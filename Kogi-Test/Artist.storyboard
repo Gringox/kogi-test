@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lUe-qn-BMd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Artists-->
+        <scene sceneID="J6V-Cs-y7D">
+            <objects>
+                <viewController storyboardIdentifier="ArtistListView" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hFn-xD-Nb3" customClass="ArtistListView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9KK-lJ-1s7"/>
+                        <viewControllerLayoutGuide type="bottom" id="z72-DO-lCC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8mD-7Z-A3n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IYe-h6-oua">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cbm-gw-GyV">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IYe-h6-oua" secondAttribute="trailing" id="6qe-hH-RQI"/>
+                            <constraint firstItem="IYe-h6-oua" firstAttribute="top" secondItem="9KK-lJ-1s7" secondAttribute="bottom" id="ZUt-6z-MMf"/>
+                            <constraint firstItem="IYe-h6-oua" firstAttribute="leading" secondItem="8mD-7Z-A3n" secondAttribute="leading" id="eub-fe-U4E"/>
+                            <constraint firstItem="IYe-h6-oua" firstAttribute="bottom" secondItem="z72-DO-lCC" secondAttribute="top" id="hYX-NU-rt8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artists" id="bhd-mE-eLt"/>
+                    <connections>
+                        <outlet property="collectionView" destination="IYe-h6-oua" id="GYp-Ot-DjX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ncz-Nv-wBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048.8" y="168.6656671664168"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lgb-we-B3h">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lUe-qn-BMd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ths-BJ-jUa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hFn-xD-Nb3" kind="relationship" relationship="rootViewController" id="dmp-gZ-FQ2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fxk-fi-s3A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="168.6656671664168"/>
+        </scene>
+    </scenes>
+</document>
