@@ -15,6 +15,8 @@
 @interface ArtistListView ()
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 
 @end
 
@@ -36,9 +38,21 @@
     self.collectionView.delegate = self.presenter;
     self.collectionView.dataSource = self.presenter;
     
+    self.refreshControl = [[UIRefreshControl alloc]init];
+    [self.collectionView addSubview:self.refreshControl];
+    [self.refreshControl addTarget:self
+                            action:@selector(refreshTable)
+                  forControlEvents:UIControlEventValueChanged];
+    
     self.collectionView.collectionViewLayout = [[ArtistListViewCollectionLayout alloc]
                                                 init];
     
+    self.searchBar.delegate = self.presenter;
+}
+
+#pragma mark - Utilities
+
+- (void)refreshTable {
     [self.presenter loadArtist];
 }
 
@@ -50,6 +64,14 @@
 
 - (UICollectionView *)getUICollectionView {
     return self.collectionView;
+}
+
+- (UISearchBar *)getUISearchBar {
+    return self.searchBar;
+}
+
+- (UIRefreshControl *)getUIRefreshControl {
+    return self.refreshControl;
 }
 
 @end

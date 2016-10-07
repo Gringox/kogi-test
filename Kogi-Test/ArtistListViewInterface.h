@@ -12,4 +12,8 @@
 
 - (UICollectionView *)getUICollectionView;
 
+- (UISearchBar *)getUISearchBar;
+
+- (UIRefreshControl *)getUIRefreshControl;
+
 @end

@@ -6,7 +6,7 @@
 //  Copyright © 2016 Pedro Luis Valdivieso. All rights reserved.
 //
 
-@protocol ArtistListViewPresenterInterface <NSObject, UICollectionViewDataSource, UICollectionViewDelegate>
+@protocol ArtistListViewPresenterInterface <NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate>
 
 - (void)loadArtist;
 

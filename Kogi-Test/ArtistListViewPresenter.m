@@ -19,14 +19,15 @@
 - (void)loadArtist {
     
     id success = ^{
+        [[self.view getUIRefreshControl] endRefreshing];
         [[self.view getUICollectionView] reloadData];
     };
     
-    id failure = ^{
-        // do error
+    id failure = ^{ // do error
+        [[self.view getUIRefreshControl] endRefreshing];
     };
     
-    [self.dataStore sendHTTPRequestForArtistsWithQuery:@"chino y nacho"
+    [self.dataStore sendHTTPRequestForArtistsWithQuery:[self.view getUISearchBar].text
                                              onSuccess:success
                                              onFailure:failure];
 }
@@ -64,6 +65,19 @@
 - (void)collectionView:(UICollectionView *)collectionView
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Collection view cell selected");
+}
+
+#pragma mark - Search Bar Delegates
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    
+    [searchBar resignFirstResponder];
+    
+    if ([searchBar.text isEqualToString:@""]) {
+        return;
+    }
+    
+    [self loadArtist];
 }
 
 @end
