@@ -38,6 +38,18 @@
     
     self.collectionView.collectionViewLayout = [[ArtistListViewCollectionLayout alloc]
                                                 init];
+    
+    [self.presenter loadArtist];
+}
+
+#pragma mark - Interfaces
+
+- (UIViewController *)viewController {
+    return self;
+}
+
+- (UICollectionView *)getUICollectionView {
+    return self.collectionView;
 }
 
 @end

@@ -10,10 +10,12 @@
 
 #import "ArtistListView.h"
 #import "ArtistListViewPresenter.h"
+#import "ArtistListFactory.h"
 
 // Interfaces
 #import "ArtistListViewInterface.h"
 #import "ArtistListViewPresenterInterface.h"
+#import "ArtistListDataStoreInterface.h"
 
 @implementation ArtistListViewFactory
 
@@ -24,6 +26,7 @@
 + (id<ArtistListViewPresenterInterface>)initPresenterWithView:(ArtistListView *)view {
     ArtistListViewPresenter *presenter = [[ArtistListViewPresenter alloc] init];
     presenter.view = view;
+    presenter.dataStore = [ArtistListFactory initArtistListModule];
     return presenter;
 }
 

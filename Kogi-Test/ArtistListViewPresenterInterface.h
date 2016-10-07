@@ -8,4 +8,6 @@
 
 @protocol ArtistListViewPresenterInterface <NSObject, UICollectionViewDataSource, UICollectionViewDelegate>
 
+- (void)loadArtist;
+
 @end

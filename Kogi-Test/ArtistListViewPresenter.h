@@ -11,9 +11,11 @@
 #import "ArtistListViewPresenterInterface.h"
 
 @protocol ArtistListViewInterface;
+@protocol ArtistListDataStoreInterface;
 
 @interface ArtistListViewPresenter : NSObject <ArtistListViewPresenterInterface>
 
 @property (nonatomic) id<ArtistListViewInterface> view;
+@property (nonatomic) id<ArtistListDataStoreInterface> dataStore;
 
 @end

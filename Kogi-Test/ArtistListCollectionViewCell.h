@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class ArtistModel;
+
 @interface ArtistListCollectionViewCell : UICollectionViewCell
+
+- (void)initCellWithArtist:(ArtistModel *)artist;
 
 @end

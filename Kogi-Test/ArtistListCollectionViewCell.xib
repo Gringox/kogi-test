@@ -16,11 +16,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="don_omar.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-0J-4ud"/>
-                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tu7-bT-5Ra">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_artists.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-0J-4ud"/>
+                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tu7-bT-5Ra">
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don Omar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCs-0y-ADi">
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don Omar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCs-0y-ADi">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -31,26 +31,26 @@
                             <constraint firstItem="VCs-0y-ADi" firstAttribute="top" secondItem="Tu7-bT-5Ra" secondAttribute="top" id="1wu-pi-mox"/>
                             <constraint firstAttribute="bottom" secondItem="VCs-0y-ADi" secondAttribute="bottom" id="L5A-xr-S6X"/>
                             <constraint firstItem="VCs-0y-ADi" firstAttribute="trailing" secondItem="Tu7-bT-5Ra" secondAttribute="trailingMargin" id="OYJ-h5-FBJ"/>
-                            <constraint firstAttribute="height" constant="50" id="suQ-36-utn"/>
+                            <constraint firstAttribute="height" constant="30" id="suQ-36-utn"/>
                         </constraints>
                     </view>
-                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvt-ed-Hvo">
+                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvt-ed-Hvo">
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.png" translatesAutoresizingMaskIntoConstraints="NO" id="ALB-CQ-ilC">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="2Ug-p6-uSl"/>
-                                    <constraint firstAttribute="height" constant="40" id="v5a-5l-A22"/>
+                                    <constraint firstAttribute="width" constant="30" id="2Ug-p6-uSl"/>
+                                    <constraint firstAttribute="height" constant="30" id="v5a-5l-A22"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people.png" translatesAutoresizingMaskIntoConstraints="NO" id="RiQ-cW-HEh">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="OWe-Jt-VYR"/>
+                                    <constraint firstAttribute="height" constant="22" id="OWe-Jt-VYR"/>
                                     <constraint firstAttribute="width" constant="30" id="ck6-vp-XRf"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MUV-5A-82g">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="C9B-a4-23t"/>
+                                    <constraint firstAttribute="height" constant="30" id="C9B-a4-23t"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,26 +58,37 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xrd-Ad-fBj">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="tle-SC-wb2"/>
+                                    <constraint firstAttribute="height" constant="30" id="tle-SC-wb2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MN7-GC-aSs">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="npF-xH-43Z"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MN7-GC-aSs" firstAttribute="leading" secondItem="MUV-5A-82g" secondAttribute="trailing" constant="8" id="004-OJ-JYY"/>
                             <constraint firstAttribute="bottom" secondItem="MUV-5A-82g" secondAttribute="bottom" id="3t5-uW-weM"/>
+                            <constraint firstItem="MN7-GC-aSs" firstAttribute="centerX" secondItem="qvt-ed-Hvo" secondAttribute="centerX" id="6Gf-UG-HGV"/>
                             <constraint firstItem="RiQ-cW-HEh" firstAttribute="leading" secondItem="xrd-Ad-fBj" secondAttribute="trailing" constant="15" id="Auh-lp-yPs"/>
                             <constraint firstAttribute="bottom" secondItem="xrd-Ad-fBj" secondAttribute="bottom" id="Blq-Lj-z5q"/>
                             <constraint firstItem="MUV-5A-82g" firstAttribute="leading" secondItem="ALB-CQ-ilC" secondAttribute="trailing" constant="8" symbolic="YES" id="CWb-Ks-SAW"/>
-                            <constraint firstAttribute="height" constant="50" id="HTw-ax-DuU"/>
-                            <constraint firstItem="ALB-CQ-ilC" firstAttribute="top" secondItem="qvt-ed-Hvo" secondAttribute="top" constant="7" id="PYk-GZ-rJF"/>
+                            <constraint firstAttribute="height" constant="30" id="HTw-ax-DuU"/>
+                            <constraint firstItem="MN7-GC-aSs" firstAttribute="top" secondItem="qvt-ed-Hvo" secondAttribute="top" constant="-3" id="LrS-dP-nMK"/>
+                            <constraint firstItem="ALB-CQ-ilC" firstAttribute="top" secondItem="qvt-ed-Hvo" secondAttribute="top" id="PYk-GZ-rJF"/>
+                            <constraint firstItem="MN7-GC-aSs" firstAttribute="centerY" secondItem="qvt-ed-Hvo" secondAttribute="centerY" id="Pks-Qj-0CM"/>
                             <constraint firstItem="RiQ-cW-HEh" firstAttribute="trailing" secondItem="qvt-ed-Hvo" secondAttribute="trailingMargin" id="ZiW-jj-TJ8"/>
+                            <constraint firstItem="xrd-Ad-fBj" firstAttribute="leading" secondItem="MN7-GC-aSs" secondAttribute="trailing" constant="8" id="eql-Pv-i9c"/>
                             <constraint firstItem="xrd-Ad-fBj" firstAttribute="top" secondItem="qvt-ed-Hvo" secondAttribute="top" id="fvE-VA-2te"/>
                             <constraint firstItem="MUV-5A-82g" firstAttribute="top" secondItem="qvt-ed-Hvo" secondAttribute="top" id="hUp-NE-smM"/>
                             <constraint firstItem="ALB-CQ-ilC" firstAttribute="leading" secondItem="qvt-ed-Hvo" secondAttribute="leadingMargin" id="mZb-5k-I8C"/>
-                            <constraint firstItem="RiQ-cW-HEh" firstAttribute="top" secondItem="qvt-ed-Hvo" secondAttribute="top" constant="10" id="who-fV-U8H"/>
+                            <constraint firstItem="RiQ-cW-HEh" firstAttribute="top" secondItem="qvt-ed-Hvo" secondAttribute="top" constant="3" id="who-fV-U8H"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -95,11 +106,17 @@
                 <constraint firstAttribute="bottom" secondItem="GHR-0J-4ud" secondAttribute="bottom" id="yAS-zv-FZp"/>
             </constraints>
             <size key="customSize" width="201" height="170"/>
+            <connections>
+                <outlet property="artistFollowers" destination="xrd-Ad-fBj" id="h4T-3r-Mtg"/>
+                <outlet property="artistMediumImage" destination="GHR-0J-4ud" id="jTA-vY-X7V"/>
+                <outlet property="artistName" destination="VCs-0y-ADi" id="PtR-lb-ta4"/>
+                <outlet property="artistPopularity" destination="MUV-5A-82g" id="d2Y-Bf-mFG"/>
+            </connections>
             <point key="canvasLocation" x="25" y="-8"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="don_omar.jpeg" width="639" height="501"/>
+        <image name="empty_artists.jpg" width="531" height="768"/>
         <image name="people.png" width="220" height="230"/>
         <image name="star.png" width="100" height="98"/>
     </resources>

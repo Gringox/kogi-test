@@ -8,4 +8,8 @@
 
 @protocol ArtistListViewInterface <NSObject>
 
+- (UIViewController *)viewController;
+
+- (UICollectionView *)getUICollectionView;
+
 @end

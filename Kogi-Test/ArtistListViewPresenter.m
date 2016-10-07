@@ -9,8 +9,27 @@
 #import "ArtistListViewPresenter.h"
 #import "ArtistListCollectionViewCell.h"
 #import "ArtistListViewInterface.h"
+#import "ArtistModel.h"
+#import "ArtistListDataStoreInterface.h"
 
 @implementation ArtistListViewPresenter
+
+#pragma mark - Services
+
+- (void)loadArtist {
+    
+    id success = ^{
+        [[self.view getUICollectionView] reloadData];
+    };
+    
+    id failure = ^{
+        // do error
+    };
+    
+    [self.dataStore sendHTTPRequestForArtistsWithQuery:@"chino y nacho"
+                                             onSuccess:success
+                                             onFailure:failure];
+}
 
 #pragma mark - Collection View Data Source
 
@@ -20,7 +39,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section {
-    return 100;
+    return [self.dataStore getNumberOfArtists];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
@@ -33,9 +52,9 @@
                                            @"ArtistListCollectionViewCell"
                                            forIndexPath:indexPath];
     
-    // Bank *bank = [self.dataStore getBankAtIndex:indexPath.row];
+    ArtistModel *artist = [self.dataStore getArtistAtIndex:indexPath.row];
     
-    // [cell initCellWith:bank];
+    [cell initCellWithArtist:artist];
     
     return cell;
 }

@@ -16,12 +16,18 @@
 		2C739D891DA73DCC00A82105 /* ArtistListViewCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739D881DA73DCC00A82105 /* ArtistListViewCollectionLayout.m */; };
 		2C739D8E1DA73E2C00A82105 /* ArtistListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739D8C1DA73E2C00A82105 /* ArtistListCollectionViewCell.m */; };
 		2C739D8F1DA73E2C00A82105 /* ArtistListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C739D8D1DA73E2C00A82105 /* ArtistListCollectionViewCell.xib */; };
-		2C739D911DA73F0A00A82105 /* don_omar.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 2C739D901DA73F0A00A82105 /* don_omar.jpeg */; };
 		2C739D951DA7429500A82105 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C739D941DA7429500A82105 /* star.png */; };
 		2C739D971DA743B700A82105 /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C739D961DA743B700A82105 /* people.png */; };
 		2C739D9A1DA747FF00A82105 /* ArtistListViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739D991DA747FF00A82105 /* ArtistListViewPresenter.m */; };
 		2C739D9F1DA7497E00A82105 /* ArtistListViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739D9E1DA7497E00A82105 /* ArtistListViewFactory.m */; };
 		2C739DA71DA752B800A82105 /* ArtistListDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DA61DA752B800A82105 /* ArtistListDataStore.m */; };
+		2C739DAD1DA7549D00A82105 /* ArtistListRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DAC1DA7549D00A82105 /* ArtistListRepository.m */; };
+		2C739DB21DA7560700A82105 /* ArtistModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DB11DA7560700A82105 /* ArtistModel.m */; };
+		2C739DB61DA7571F00A82105 /* NSDictionary+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DB51DA7571F00A82105 /* NSDictionary+Validation.m */; };
+		2C739DBA1DA758A900A82105 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DB91DA758A900A82105 /* APIClient.m */; };
+		2C739DBF1DA75A3100A82105 /* NSString+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DBE1DA75A3100A82105 /* NSString+URLEncode.m */; };
+		2C739DC21DA7628C00A82105 /* ArtistListFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DC11DA7628C00A82105 /* ArtistListFactory.m */; };
+		2C739DC41DA767ED00A82105 /* empty_artists.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C739DC31DA767ED00A82105 /* empty_artists.jpg */; };
 		348911A017211DCBA12BBF0B /* libPods-Kogi-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F791DBCF7D48F7434A19A0 /* libPods-Kogi-Test.a */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +48,6 @@
 		2C739D8B1DA73E2C00A82105 /* ArtistListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListCollectionViewCell.h; sourceTree = "<group>"; };
 		2C739D8C1DA73E2C00A82105 /* ArtistListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistListCollectionViewCell.m; sourceTree = "<group>"; };
 		2C739D8D1DA73E2C00A82105 /* ArtistListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistListCollectionViewCell.xib; sourceTree = "<group>"; };
-		2C739D901DA73F0A00A82105 /* don_omar.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = don_omar.jpeg; sourceTree = "<group>"; };
 		2C739D941DA7429500A82105 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		2C739D961DA743B700A82105 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
 		2C739D981DA747FF00A82105 /* ArtistListViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListViewPresenter.h; sourceTree = "<group>"; };
@@ -53,6 +58,20 @@
 		2C739DA51DA752B800A82105 /* ArtistListDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListDataStore.h; sourceTree = "<group>"; };
 		2C739DA61DA752B800A82105 /* ArtistListDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistListDataStore.m; sourceTree = "<group>"; };
 		2C739DA91DA752D400A82105 /* ArtistListDataStoreInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistListDataStoreInterface.h; sourceTree = "<group>"; };
+		2C739DAB1DA7549D00A82105 /* ArtistListRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListRepository.h; sourceTree = "<group>"; };
+		2C739DAC1DA7549D00A82105 /* ArtistListRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistListRepository.m; sourceTree = "<group>"; };
+		2C739DB01DA7560700A82105 /* ArtistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistModel.h; sourceTree = "<group>"; };
+		2C739DB11DA7560700A82105 /* ArtistModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistModel.m; sourceTree = "<group>"; };
+		2C739DB41DA7571F00A82105 /* NSDictionary+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Validation.h"; sourceTree = "<group>"; };
+		2C739DB51DA7571F00A82105 /* NSDictionary+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Validation.m"; sourceTree = "<group>"; };
+		2C739DB81DA758A900A82105 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		2C739DB91DA758A900A82105 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		2C739DBB1DA758EC00A82105 /* AppDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDefaults.h; sourceTree = "<group>"; };
+		2C739DBD1DA75A3100A82105 /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
+		2C739DBE1DA75A3100A82105 /* NSString+URLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncode.m"; sourceTree = "<group>"; };
+		2C739DC01DA7628C00A82105 /* ArtistListFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListFactory.h; sourceTree = "<group>"; };
+		2C739DC11DA7628C00A82105 /* ArtistListFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistListFactory.m; sourceTree = "<group>"; };
+		2C739DC31DA767ED00A82105 /* empty_artists.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = empty_artists.jpg; sourceTree = "<group>"; };
 		55F791DBCF7D48F7434A19A0 /* libPods-Kogi-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kogi-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7406C1D3417EAE7ACBB379B /* Pods-Kogi-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kogi-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kogi-Test/Pods-Kogi-Test.release.xcconfig"; sourceTree = "<group>"; };
 		CC071A1676A957165DD3106E /* Pods-Kogi-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kogi-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kogi-Test/Pods-Kogi-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,14 +111,16 @@
 			isa = PBXGroup;
 			children = (
 				2C739D751DA73AE300A82105 /* Utilities */,
+				2C739DAE1DA755E900A82105 /* Models */,
 				2C739D741DA73ADC00A82105 /* Modules */,
 				2C739D731DA73AD500A82105 /* Views */,
+				2C739DBB1DA758EC00A82105 /* AppDefaults.h */,
 				2C739D5F1DA739C600A82105 /* AppDelegate.h */,
 				2C739D601DA739C600A82105 /* AppDelegate.m */,
 				2C739D681DA739C600A82105 /* Assets.xcassets */,
-				2C739D901DA73F0A00A82105 /* don_omar.jpeg */,
 				2C739D941DA7429500A82105 /* star.png */,
 				2C739D961DA743B700A82105 /* people.png */,
+				2C739DC31DA767ED00A82105 /* empty_artists.jpg */,
 				2C739D6A1DA739C600A82105 /* LaunchScreen.storyboard */,
 				2C739D6D1DA739C600A82105 /* Info.plist */,
 				2C739D5C1DA739C600A82105 /* Supporting Files */,
@@ -134,6 +155,9 @@
 		2C739D751DA73AE300A82105 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2C739DBC1DA75A0A00A82105 /* URLEncode */,
+				2C739DB71DA7587500A82105 /* ApiClient */,
+				2C739DB31DA7570C00A82105 /* NSdictionary+Validation */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -235,7 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				2C739DA41DA7529300A82105 /* Factory */,
-				2C739DA31DA7528D00A82105 /* Entity */,
+				2C739DAA1DA7546800A82105 /* Repository */,
 				2C739DA21DA7528600A82105 /* DataStore */,
 			);
 			name = List;
@@ -251,16 +275,11 @@
 			name = DataStore;
 			sourceTree = "<group>";
 		};
-		2C739DA31DA7528D00A82105 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Entity;
-			sourceTree = "<group>";
-		};
 		2C739DA41DA7529300A82105 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				2C739DC01DA7628C00A82105 /* ArtistListFactory.h */,
+				2C739DC11DA7628C00A82105 /* ArtistListFactory.m */,
 			);
 			name = Factory;
 			sourceTree = "<group>";
@@ -271,6 +290,59 @@
 				2C739DA91DA752D400A82105 /* ArtistListDataStoreInterface.h */,
 			);
 			name = Interface;
+			sourceTree = "<group>";
+		};
+		2C739DAA1DA7546800A82105 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2C739DAB1DA7549D00A82105 /* ArtistListRepository.h */,
+				2C739DAC1DA7549D00A82105 /* ArtistListRepository.m */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		2C739DAE1DA755E900A82105 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C739DAF1DA755F300A82105 /* Artist */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2C739DAF1DA755F300A82105 /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				2C739DB01DA7560700A82105 /* ArtistModel.h */,
+				2C739DB11DA7560700A82105 /* ArtistModel.m */,
+			);
+			name = Artist;
+			sourceTree = "<group>";
+		};
+		2C739DB31DA7570C00A82105 /* NSdictionary+Validation */ = {
+			isa = PBXGroup;
+			children = (
+				2C739DB41DA7571F00A82105 /* NSDictionary+Validation.h */,
+				2C739DB51DA7571F00A82105 /* NSDictionary+Validation.m */,
+			);
+			name = "NSdictionary+Validation";
+			sourceTree = "<group>";
+		};
+		2C739DB71DA7587500A82105 /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				2C739DB81DA758A900A82105 /* APIClient.h */,
+				2C739DB91DA758A900A82105 /* APIClient.m */,
+			);
+			name = ApiClient;
+			sourceTree = "<group>";
+		};
+		2C739DBC1DA75A0A00A82105 /* URLEncode */ = {
+			isa = PBXGroup;
+			children = (
+				2C739DBD1DA75A3100A82105 /* NSString+URLEncode.h */,
+				2C739DBE1DA75A3100A82105 /* NSString+URLEncode.m */,
+			);
+			name = URLEncode;
 			sourceTree = "<group>";
 		};
 		354B956258759751F10A0F57 /* Frameworks */ = {
@@ -351,9 +423,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C739DC41DA767ED00A82105 /* empty_artists.jpg in Resources */,
 				2C739D971DA743B700A82105 /* people.png in Resources */,
 				2C739D851DA73CDD00A82105 /* Artist.storyboard in Resources */,
-				2C739D911DA73F0A00A82105 /* don_omar.jpeg in Resources */,
 				2C739D6C1DA739C600A82105 /* LaunchScreen.storyboard in Resources */,
 				2C739D8F1DA73E2C00A82105 /* ArtistListCollectionViewCell.xib in Resources */,
 				2C739D691DA739C600A82105 /* Assets.xcassets in Resources */,
@@ -416,13 +488,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C739DB21DA7560700A82105 /* ArtistModel.m in Sources */,
 				2C739D821DA73C3300A82105 /* ArtistListView.m in Sources */,
 				2C739D8E1DA73E2C00A82105 /* ArtistListCollectionViewCell.m in Sources */,
 				2C739DA71DA752B800A82105 /* ArtistListDataStore.m in Sources */,
 				2C739D9A1DA747FF00A82105 /* ArtistListViewPresenter.m in Sources */,
+				2C739DBF1DA75A3100A82105 /* NSString+URLEncode.m in Sources */,
 				2C739D9F1DA7497E00A82105 /* ArtistListViewFactory.m in Sources */,
+				2C739DB61DA7571F00A82105 /* NSDictionary+Validation.m in Sources */,
+				2C739DBA1DA758A900A82105 /* APIClient.m in Sources */,
+				2C739DC21DA7628C00A82105 /* ArtistListFactory.m in Sources */,
 				2C739D611DA739C600A82105 /* AppDelegate.m in Sources */,
 				2C739D891DA73DCC00A82105 /* ArtistListViewCollectionLayout.m in Sources */,
+				2C739DAD1DA7549D00A82105 /* ArtistListRepository.m in Sources */,
 				2C739D5E1DA739C600A82105 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
