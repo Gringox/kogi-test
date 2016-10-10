@@ -12,10 +12,12 @@
 
 @protocol ArtistListViewInterface;
 @protocol ArtistListDataStoreInterface;
+@protocol ArtistListViewRouterInterface;
 
 @interface ArtistListViewPresenter : NSObject <ArtistListViewPresenterInterface>
 
 @property (nonatomic) id<ArtistListViewInterface> view;
 @property (nonatomic) id<ArtistListDataStoreInterface> dataStore;
+@property (nonatomic) id<ArtistListViewRouterInterface> router;
 
 @end

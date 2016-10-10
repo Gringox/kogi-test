@@ -6,6 +6,7 @@
 target 'Kogi-Test' do
 
   pod 'AFNetworking', '~> 3.0'
+  pod 'XLForm', '~> 3.0'
 
 end
 

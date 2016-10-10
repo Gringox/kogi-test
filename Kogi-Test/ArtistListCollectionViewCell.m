@@ -28,9 +28,9 @@
     
     if (artist.imageMediumUrl) {
         [self.artistMediumImage setImageWithURL:[NSURL URLWithString:artist.imageMediumUrl]
-                               placeholderImage:[UIImage imageNamed:@"empty_artists.jpg"]];
+                               placeholderImage:[UIImage imageNamed:@"fb_empty_profile.jpg"]];
     }else{
-        [self.artistMediumImage setImage:[UIImage imageNamed:@"empty_artists.jpg"]];
+        [self.artistMediumImage setImage:[UIImage imageNamed:@"fb_empty_profile.jpg"]];
     }
 }
 

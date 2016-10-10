@@ -26,9 +26,21 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="none" id="q03-65-zz5">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="GX3-a0-xoe" kind="show" id="Uk3-kk-kfT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="5ks-mz-HRf">
+                            <searchBar contentMode="redraw" placeholder="Search artists" translatesAutoresizingMaskIntoConstraints="NO" id="5ks-mz-HRf">
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
@@ -52,6 +64,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ncz-Nv-wBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1048.8" y="168.6656671664168"/>
+        </scene>
+        <!--Artist-->
+        <scene sceneID="ChD-Re-dDr">
+            <objects>
+                <viewController storyboardIdentifier="ArtistDetailView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GX3-a0-xoe" customClass="ArtistDetailView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="za1-wl-w3q"/>
+                        <viewControllerLayoutGuide type="bottom" id="qq2-aR-8Lb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bs8-1F-dbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artist" id="Nks-Fp-VHa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAJ-GS-kKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="169"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lgb-we-B3h">

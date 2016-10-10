@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="czr-Ou-LKP" customClass="ArtistDetailViewAlbumCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="czr-Ou-LKP" id="gfk-Dm-5YN">
+                <frame key="frameInset" width="375" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="imy-ae-T5m">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypP-mt-Dqs">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_album.png" translatesAutoresizingMaskIntoConstraints="NO" id="TdP-KU-8aa">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="kNo-ZP-477"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TdP-KU-8aa" firstAttribute="leading" secondItem="gfk-Dm-5YN" secondAttribute="leadingMargin" id="IMf-od-WyT"/>
+                    <constraint firstItem="imy-ae-T5m" firstAttribute="leading" secondItem="TdP-KU-8aa" secondAttribute="trailing" constant="8" id="Imd-w7-fHC"/>
+                    <constraint firstAttribute="bottom" secondItem="TdP-KU-8aa" secondAttribute="bottom" constant="11" id="Po2-94-deH"/>
+                    <constraint firstItem="imy-ae-T5m" firstAttribute="trailing" secondItem="ypP-mt-Dqs" secondAttribute="trailing" id="VKW-23-5Jz"/>
+                    <constraint firstItem="ypP-mt-Dqs" firstAttribute="top" secondItem="imy-ae-T5m" secondAttribute="bottom" constant="8" symbolic="YES" id="a0x-ce-La7"/>
+                    <constraint firstItem="imy-ae-T5m" firstAttribute="leading" secondItem="ypP-mt-Dqs" secondAttribute="leading" id="cHB-C4-iqC"/>
+                    <constraint firstItem="imy-ae-T5m" firstAttribute="trailing" secondItem="gfk-Dm-5YN" secondAttribute="trailingMargin" id="eeN-Bi-OtH"/>
+                    <constraint firstItem="TdP-KU-8aa" firstAttribute="centerY" secondItem="gfk-Dm-5YN" secondAttribute="centerY" id="vh6-rx-JhS"/>
+                    <constraint firstItem="imy-ae-T5m" firstAttribute="top" secondItem="gfk-Dm-5YN" secondAttribute="topMargin" constant="6" id="zmC-0K-qLW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="albumImage" destination="TdP-KU-8aa" id="13Y-3i-fjV"/>
+                <outlet property="albumName" destination="imy-ae-T5m" id="W5e-C9-hpR"/>
+                <outlet property="availableMarkets" destination="ypP-mt-Dqs" id="tDu-U7-pBB"/>
+            </connections>
+            <point key="canvasLocation" x="240.5" y="-113"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="empty_album.png" width="300" height="300"/>
+    </resources>
+</document>

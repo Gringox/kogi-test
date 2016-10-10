@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_artists.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-0J-4ud"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fb_empty_profile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-0J-4ud"/>
                     <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tu7-bT-5Ra">
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don Omar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VCs-0y-ADi">
@@ -76,9 +76,9 @@
                             <constraint firstItem="MN7-GC-aSs" firstAttribute="leading" secondItem="MUV-5A-82g" secondAttribute="trailing" constant="8" id="004-OJ-JYY"/>
                             <constraint firstAttribute="bottom" secondItem="MUV-5A-82g" secondAttribute="bottom" id="3t5-uW-weM"/>
                             <constraint firstItem="MN7-GC-aSs" firstAttribute="centerX" secondItem="qvt-ed-Hvo" secondAttribute="centerX" id="6Gf-UG-HGV"/>
-                            <constraint firstItem="RiQ-cW-HEh" firstAttribute="leading" secondItem="xrd-Ad-fBj" secondAttribute="trailing" constant="15" id="Auh-lp-yPs"/>
+                            <constraint firstItem="RiQ-cW-HEh" firstAttribute="leading" secondItem="xrd-Ad-fBj" secondAttribute="trailing" id="Auh-lp-yPs"/>
                             <constraint firstAttribute="bottom" secondItem="xrd-Ad-fBj" secondAttribute="bottom" id="Blq-Lj-z5q"/>
-                            <constraint firstItem="MUV-5A-82g" firstAttribute="leading" secondItem="ALB-CQ-ilC" secondAttribute="trailing" constant="8" symbolic="YES" id="CWb-Ks-SAW"/>
+                            <constraint firstItem="MUV-5A-82g" firstAttribute="leading" secondItem="ALB-CQ-ilC" secondAttribute="trailing" id="CWb-Ks-SAW"/>
                             <constraint firstAttribute="height" constant="30" id="HTw-ax-DuU"/>
                             <constraint firstItem="MN7-GC-aSs" firstAttribute="top" secondItem="qvt-ed-Hvo" secondAttribute="top" constant="-3" id="LrS-dP-nMK"/>
                             <constraint firstItem="ALB-CQ-ilC" firstAttribute="top" secondItem="qvt-ed-Hvo" secondAttribute="top" id="PYk-GZ-rJF"/>
@@ -116,7 +116,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="empty_artists.jpg" width="531" height="768"/>
+        <image name="fb_empty_profile.jpg" width="500" height="410"/>
         <image name="people.png" width="220" height="230"/>
         <image name="star.png" width="100" height="98"/>
     </resources>

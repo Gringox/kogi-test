@@ -11,6 +11,7 @@
 #import "ArtistListViewInterface.h"
 #import "ArtistModel.h"
 #import "ArtistListDataStoreInterface.h"
+#import "ArtistListViewRouterInterface.h"
 
 @implementation ArtistListViewPresenter
 
@@ -64,7 +65,10 @@
 
 - (void)collectionView:(UICollectionView *)collectionView
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"Collection view cell selected");
+    
+    ArtistModel *artist = [self.dataStore getArtistAtIndex:indexPath.row];
+    
+    [self.router goToArtistDetailWithArtist:artist fromVC:[self.view viewController]];
 }
 
 #pragma mark - Search Bar Delegates

@@ -27,7 +27,19 @@
 		2C739DBA1DA758A900A82105 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DB91DA758A900A82105 /* APIClient.m */; };
 		2C739DBF1DA75A3100A82105 /* NSString+URLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DBE1DA75A3100A82105 /* NSString+URLEncode.m */; };
 		2C739DC21DA7628C00A82105 /* ArtistListFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C739DC11DA7628C00A82105 /* ArtistListFactory.m */; };
-		2C739DC41DA767ED00A82105 /* empty_artists.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C739DC31DA767ED00A82105 /* empty_artists.jpg */; };
+		2C9168211DAB0E0200BBF092 /* fb_empty_profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C9168201DAB0E0200BBF092 /* fb_empty_profile.jpg */; };
+		2C91682A1DAB14F700BBF092 /* ArtistDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9168291DAB14F700BBF092 /* ArtistDetailView.m */; };
+		2C9168301DAB15BC00BBF092 /* ArtistDetailViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91682F1DAB15BC00BBF092 /* ArtistDetailViewPresenter.m */; };
+		2C9168351DAB160400BBF092 /* ArtistDetailViewFormBuilderInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9168341DAB160400BBF092 /* ArtistDetailViewFormBuilderInteractor.m */; };
+		2C91683A1DAB164A00BBF092 /* ArtistDetailViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9168391DAB164A00BBF092 /* ArtistDetailViewFactory.m */; };
+		2C91683E1DAB1B2900BBF092 /* ArtistListViewRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91683D1DAB1B2900BBF092 /* ArtistListViewRouter.m */; };
+		2C9168441DAB217300BBF092 /* ArtistDetailViewAlbumCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9168431DAB217300BBF092 /* ArtistDetailViewAlbumCell.m */; };
+		2C9168461DAB21D300BBF092 /* ArtistDetailViewAlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C9168451DAB21D300BBF092 /* ArtistDetailViewAlbumCell.xib */; };
+		2C91684C1DAB310D00BBF092 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91684B1DAB310D00BBF092 /* AlbumModel.m */; };
+		2C9168531DAB327C00BBF092 /* ArtistDetailDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9168521DAB327C00BBF092 /* ArtistDetailDataStore.m */; };
+		2C9168581DAB32D600BBF092 /* ArtistDetailRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9168571DAB32D600BBF092 /* ArtistDetailRepository.m */; };
+		2C91685B1DAB32EB00BBF092 /* ArtistDetailFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C91685A1DAB32EB00BBF092 /* ArtistDetailFactory.m */; };
+		2C91685D1DAB405300BBF092 /* empty_album.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C91685C1DAB405300BBF092 /* empty_album.png */; };
 		348911A017211DCBA12BBF0B /* libPods-Kogi-Test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F791DBCF7D48F7434A19A0 /* libPods-Kogi-Test.a */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +48,7 @@
 		2C739D5D1DA739C600A82105 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C739D5F1DA739C600A82105 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C739D601DA739C600A82105 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2C739D681DA739C600A82105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C739D681DA739C600A82105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Kogi-Test/Assets.xcassets"; sourceTree = "<group>"; };
 		2C739D6B1DA739C600A82105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C739D6D1DA739C600A82105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C739D801DA73C3300A82105 /* ArtistListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListView.h; sourceTree = "<group>"; };
@@ -48,8 +60,8 @@
 		2C739D8B1DA73E2C00A82105 /* ArtistListCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListCollectionViewCell.h; sourceTree = "<group>"; };
 		2C739D8C1DA73E2C00A82105 /* ArtistListCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistListCollectionViewCell.m; sourceTree = "<group>"; };
 		2C739D8D1DA73E2C00A82105 /* ArtistListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistListCollectionViewCell.xib; sourceTree = "<group>"; };
-		2C739D941DA7429500A82105 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		2C739D961DA743B700A82105 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
+		2C739D941DA7429500A82105 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = "Kogi-Test/star.png"; sourceTree = "<group>"; };
+		2C739D961DA743B700A82105 /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = people.png; path = "Kogi-Test/people.png"; sourceTree = "<group>"; };
 		2C739D981DA747FF00A82105 /* ArtistListViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListViewPresenter.h; sourceTree = "<group>"; };
 		2C739D991DA747FF00A82105 /* ArtistListViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistListViewPresenter.m; sourceTree = "<group>"; };
 		2C739D9C1DA7481600A82105 /* ArtistListViewPresenterInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistListViewPresenterInterface.h; sourceTree = "<group>"; };
@@ -71,7 +83,34 @@
 		2C739DBE1DA75A3100A82105 /* NSString+URLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncode.m"; sourceTree = "<group>"; };
 		2C739DC01DA7628C00A82105 /* ArtistListFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListFactory.h; sourceTree = "<group>"; };
 		2C739DC11DA7628C00A82105 /* ArtistListFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistListFactory.m; sourceTree = "<group>"; };
-		2C739DC31DA767ED00A82105 /* empty_artists.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = empty_artists.jpg; sourceTree = "<group>"; };
+		2C9168201DAB0E0200BBF092 /* fb_empty_profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fb_empty_profile.jpg; path = "Kogi-Test/fb_empty_profile.jpg"; sourceTree = "<group>"; };
+		2C9168281DAB14F700BBF092 /* ArtistDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailView.h; sourceTree = "<group>"; };
+		2C9168291DAB14F700BBF092 /* ArtistDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailView.m; sourceTree = "<group>"; };
+		2C91682D1DAB159300BBF092 /* ArtistDetailViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewInterface.h; sourceTree = "<group>"; };
+		2C91682E1DAB15BC00BBF092 /* ArtistDetailViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewPresenter.h; sourceTree = "<group>"; };
+		2C91682F1DAB15BC00BBF092 /* ArtistDetailViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailViewPresenter.m; sourceTree = "<group>"; };
+		2C9168321DAB15CF00BBF092 /* ArtistDetailViewPresenterInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewPresenterInterface.h; sourceTree = "<group>"; };
+		2C9168331DAB160400BBF092 /* ArtistDetailViewFormBuilderInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewFormBuilderInteractor.h; sourceTree = "<group>"; };
+		2C9168341DAB160400BBF092 /* ArtistDetailViewFormBuilderInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailViewFormBuilderInteractor.m; sourceTree = "<group>"; };
+		2C9168371DAB161C00BBF092 /* ArtistDetailViewFormBuilderInteractorInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewFormBuilderInteractorInterface.h; sourceTree = "<group>"; };
+		2C9168381DAB164A00BBF092 /* ArtistDetailViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewFactory.h; sourceTree = "<group>"; };
+		2C9168391DAB164A00BBF092 /* ArtistDetailViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailViewFactory.m; sourceTree = "<group>"; };
+		2C91683C1DAB1B2900BBF092 /* ArtistListViewRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistListViewRouter.h; sourceTree = "<group>"; };
+		2C91683D1DAB1B2900BBF092 /* ArtistListViewRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistListViewRouter.m; sourceTree = "<group>"; };
+		2C9168401DAB1B3C00BBF092 /* ArtistListViewRouterInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistListViewRouterInterface.h; sourceTree = "<group>"; };
+		2C9168421DAB217300BBF092 /* ArtistDetailViewAlbumCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailViewAlbumCell.h; sourceTree = "<group>"; };
+		2C9168431DAB217300BBF092 /* ArtistDetailViewAlbumCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailViewAlbumCell.m; sourceTree = "<group>"; };
+		2C9168451DAB21D300BBF092 /* ArtistDetailViewAlbumCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArtistDetailViewAlbumCell.xib; sourceTree = "<group>"; };
+		2C91684A1DAB310D00BBF092 /* AlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumModel.h; sourceTree = "<group>"; };
+		2C91684B1DAB310D00BBF092 /* AlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumModel.m; sourceTree = "<group>"; };
+		2C9168511DAB327C00BBF092 /* ArtistDetailDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailDataStore.h; sourceTree = "<group>"; };
+		2C9168521DAB327C00BBF092 /* ArtistDetailDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailDataStore.m; sourceTree = "<group>"; };
+		2C9168551DAB329500BBF092 /* ArtistDetailDataStoreInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArtistDetailDataStoreInterface.h; sourceTree = "<group>"; };
+		2C9168561DAB32D600BBF092 /* ArtistDetailRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailRepository.h; sourceTree = "<group>"; };
+		2C9168571DAB32D600BBF092 /* ArtistDetailRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailRepository.m; sourceTree = "<group>"; };
+		2C9168591DAB32EB00BBF092 /* ArtistDetailFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtistDetailFactory.h; sourceTree = "<group>"; };
+		2C91685A1DAB32EB00BBF092 /* ArtistDetailFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtistDetailFactory.m; sourceTree = "<group>"; };
+		2C91685C1DAB405300BBF092 /* empty_album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = empty_album.png; sourceTree = "<group>"; };
 		55F791DBCF7D48F7434A19A0 /* libPods-Kogi-Test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kogi-Test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7406C1D3417EAE7ACBB379B /* Pods-Kogi-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kogi-Test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kogi-Test/Pods-Kogi-Test.release.xcconfig"; sourceTree = "<group>"; };
 		CC071A1676A957165DD3106E /* Pods-Kogi-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kogi-Test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kogi-Test/Pods-Kogi-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,10 +156,7 @@
 				2C739DBB1DA758EC00A82105 /* AppDefaults.h */,
 				2C739D5F1DA739C600A82105 /* AppDelegate.h */,
 				2C739D601DA739C600A82105 /* AppDelegate.m */,
-				2C739D681DA739C600A82105 /* Assets.xcassets */,
-				2C739D941DA7429500A82105 /* star.png */,
-				2C739D961DA743B700A82105 /* people.png */,
-				2C739DC31DA767ED00A82105 /* empty_artists.jpg */,
+				2C9168221DAB0F6A00BBF092 /* Resources */,
 				2C739D6A1DA739C600A82105 /* LaunchScreen.storyboard */,
 				2C739D6D1DA739C600A82105 /* Info.plist */,
 				2C739D5C1DA739C600A82105 /* Supporting Files */,
@@ -167,6 +203,7 @@
 			children = (
 				2C739D841DA73CDD00A82105 /* Artist.storyboard */,
 				2C739D7F1DA73BE200A82105 /* List */,
+				2C9168241DAB0FAC00BBF092 /* Detail */,
 			);
 			name = Artist;
 			sourceTree = "<group>";
@@ -214,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				2C739D791DA73B0D00A82105 /* Factory */,
+				2C91683B1DAB1B1200BBF092 /* Router */,
 				2C739D781DA73B0600A82105 /* Presenter */,
 				2C739D771DA73B0000A82105 /* View */,
 			);
@@ -251,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				2C739DA11DA7527B00A82105 /* List */,
+				2C91684D1DAB324800BBF092 /* Detail */,
 			);
 			name = Artist;
 			sourceTree = "<group>";
@@ -304,6 +343,7 @@
 		2C739DAE1DA755E900A82105 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2C9168491DAB30FA00BBF092 /* Album */,
 				2C739DAF1DA755F300A82105 /* Artist */,
 			);
 			name = Models;
@@ -343,6 +383,185 @@
 				2C739DBE1DA75A3100A82105 /* NSString+URLEncode.m */,
 			);
 			name = URLEncode;
+			sourceTree = "<group>";
+		};
+		2C9168221DAB0F6A00BBF092 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168231DAB0F8400BBF092 /* Images */,
+				2C739D681DA739C600A82105 /* Assets.xcassets */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		2C9168231DAB0F8400BBF092 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2C739D941DA7429500A82105 /* star.png */,
+				2C739D961DA743B700A82105 /* people.png */,
+				2C9168201DAB0E0200BBF092 /* fb_empty_profile.jpg */,
+				2C91685C1DAB405300BBF092 /* empty_album.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		2C9168241DAB0FAC00BBF092 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168271DAB11CB00BBF092 /* Factory */,
+				2C91682B1DAB156F00BBF092 /* Interactor */,
+				2C9168261DAB11C500BBF092 /* Presenter */,
+				2C9168251DAB11C100BBF092 /* View */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		2C9168251DAB11C100BBF092 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C91682C1DAB158300BBF092 /* Interface */,
+				2C9168411DAB213200BBF092 /* ArtistDetailViewAlbumCell */,
+				2C9168281DAB14F700BBF092 /* ArtistDetailView.h */,
+				2C9168291DAB14F700BBF092 /* ArtistDetailView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2C9168261DAB11C500BBF092 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168311DAB15C200BBF092 /* Interface */,
+				2C91682E1DAB15BC00BBF092 /* ArtistDetailViewPresenter.h */,
+				2C91682F1DAB15BC00BBF092 /* ArtistDetailViewPresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		2C9168271DAB11CB00BBF092 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168381DAB164A00BBF092 /* ArtistDetailViewFactory.h */,
+				2C9168391DAB164A00BBF092 /* ArtistDetailViewFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		2C91682B1DAB156F00BBF092 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168361DAB160D00BBF092 /* Interface */,
+				2C9168331DAB160400BBF092 /* ArtistDetailViewFormBuilderInteractor.h */,
+				2C9168341DAB160400BBF092 /* ArtistDetailViewFormBuilderInteractor.m */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		2C91682C1DAB158300BBF092 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2C91682D1DAB159300BBF092 /* ArtistDetailViewInterface.h */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2C9168311DAB15C200BBF092 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168321DAB15CF00BBF092 /* ArtistDetailViewPresenterInterface.h */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2C9168361DAB160D00BBF092 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168371DAB161C00BBF092 /* ArtistDetailViewFormBuilderInteractorInterface.h */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2C91683B1DAB1B1200BBF092 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2C91683F1DAB1B2F00BBF092 /* Interface */,
+				2C91683C1DAB1B2900BBF092 /* ArtistListViewRouter.h */,
+				2C91683D1DAB1B2900BBF092 /* ArtistListViewRouter.m */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		2C91683F1DAB1B2F00BBF092 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168401DAB1B3C00BBF092 /* ArtistListViewRouterInterface.h */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		2C9168411DAB213200BBF092 /* ArtistDetailViewAlbumCell */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168451DAB21D300BBF092 /* ArtistDetailViewAlbumCell.xib */,
+				2C9168421DAB217300BBF092 /* ArtistDetailViewAlbumCell.h */,
+				2C9168431DAB217300BBF092 /* ArtistDetailViewAlbumCell.m */,
+			);
+			name = ArtistDetailViewAlbumCell;
+			sourceTree = "<group>";
+		};
+		2C9168491DAB30FA00BBF092 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				2C91684A1DAB310D00BBF092 /* AlbumModel.h */,
+				2C91684B1DAB310D00BBF092 /* AlbumModel.m */,
+			);
+			name = Album;
+			sourceTree = "<group>";
+		};
+		2C91684D1DAB324800BBF092 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168501DAB326200BBF092 /* Factory */,
+				2C91684F1DAB325A00BBF092 /* Repository */,
+				2C91684E1DAB325300BBF092 /* DataStore */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		2C91684E1DAB325300BBF092 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168541DAB328200BBF092 /* Interface */,
+				2C9168511DAB327C00BBF092 /* ArtistDetailDataStore.h */,
+				2C9168521DAB327C00BBF092 /* ArtistDetailDataStore.m */,
+			);
+			name = DataStore;
+			sourceTree = "<group>";
+		};
+		2C91684F1DAB325A00BBF092 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168561DAB32D600BBF092 /* ArtistDetailRepository.h */,
+				2C9168571DAB32D600BBF092 /* ArtistDetailRepository.m */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		2C9168501DAB326200BBF092 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168591DAB32EB00BBF092 /* ArtistDetailFactory.h */,
+				2C91685A1DAB32EB00BBF092 /* ArtistDetailFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		2C9168541DAB328200BBF092 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				2C9168551DAB329500BBF092 /* ArtistDetailDataStoreInterface.h */,
+			);
+			name = Interface;
 			sourceTree = "<group>";
 		};
 		354B956258759751F10A0F57 /* Frameworks */ = {
@@ -423,12 +642,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C739DC41DA767ED00A82105 /* empty_artists.jpg in Resources */,
+				2C9168211DAB0E0200BBF092 /* fb_empty_profile.jpg in Resources */,
 				2C739D971DA743B700A82105 /* people.png in Resources */,
 				2C739D851DA73CDD00A82105 /* Artist.storyboard in Resources */,
 				2C739D6C1DA739C600A82105 /* LaunchScreen.storyboard in Resources */,
+				2C9168461DAB21D300BBF092 /* ArtistDetailViewAlbumCell.xib in Resources */,
 				2C739D8F1DA73E2C00A82105 /* ArtistListCollectionViewCell.xib in Resources */,
 				2C739D691DA739C600A82105 /* Assets.xcassets in Resources */,
+				2C91685D1DAB405300BBF092 /* empty_album.png in Resources */,
 				2C739D951DA7429500A82105 /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,20 +709,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C91683E1DAB1B2900BBF092 /* ArtistListViewRouter.m in Sources */,
 				2C739DB21DA7560700A82105 /* ArtistModel.m in Sources */,
+				2C91685B1DAB32EB00BBF092 /* ArtistDetailFactory.m in Sources */,
 				2C739D821DA73C3300A82105 /* ArtistListView.m in Sources */,
 				2C739D8E1DA73E2C00A82105 /* ArtistListCollectionViewCell.m in Sources */,
+				2C9168301DAB15BC00BBF092 /* ArtistDetailViewPresenter.m in Sources */,
 				2C739DA71DA752B800A82105 /* ArtistListDataStore.m in Sources */,
 				2C739D9A1DA747FF00A82105 /* ArtistListViewPresenter.m in Sources */,
+				2C9168351DAB160400BBF092 /* ArtistDetailViewFormBuilderInteractor.m in Sources */,
+				2C9168581DAB32D600BBF092 /* ArtistDetailRepository.m in Sources */,
+				2C9168441DAB217300BBF092 /* ArtistDetailViewAlbumCell.m in Sources */,
+				2C91682A1DAB14F700BBF092 /* ArtistDetailView.m in Sources */,
 				2C739DBF1DA75A3100A82105 /* NSString+URLEncode.m in Sources */,
 				2C739D9F1DA7497E00A82105 /* ArtistListViewFactory.m in Sources */,
 				2C739DB61DA7571F00A82105 /* NSDictionary+Validation.m in Sources */,
 				2C739DBA1DA758A900A82105 /* APIClient.m in Sources */,
 				2C739DC21DA7628C00A82105 /* ArtistListFactory.m in Sources */,
+				2C9168531DAB327C00BBF092 /* ArtistDetailDataStore.m in Sources */,
 				2C739D611DA739C600A82105 /* AppDelegate.m in Sources */,
 				2C739D891DA73DCC00A82105 /* ArtistListViewCollectionLayout.m in Sources */,
 				2C739DAD1DA7549D00A82105 /* ArtistListRepository.m in Sources */,
 				2C739D5E1DA739C600A82105 /* main.m in Sources */,
+				2C91683A1DAB164A00BBF092 /* ArtistDetailViewFactory.m in Sources */,
+				2C91684C1DAB310D00BBF092 /* AlbumModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

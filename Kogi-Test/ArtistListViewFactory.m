@@ -11,11 +11,13 @@
 #import "ArtistListView.h"
 #import "ArtistListViewPresenter.h"
 #import "ArtistListFactory.h"
+#import "ArtistListViewRouter.h"
 
 // Interfaces
 #import "ArtistListViewInterface.h"
 #import "ArtistListViewPresenterInterface.h"
 #import "ArtistListDataStoreInterface.h"
+#import "ArtistListViewRouterInterface.h"
 
 @implementation ArtistListViewFactory
 
@@ -27,7 +29,12 @@
     ArtistListViewPresenter *presenter = [[ArtistListViewPresenter alloc] init];
     presenter.view = view;
     presenter.dataStore = [ArtistListFactory initArtistListModule];
+    presenter.router = [ArtistListViewFactory initRouter];
     return presenter;
+}
+
++ (id<ArtistListViewRouterInterface>)initRouter {
+    return [[ArtistListViewRouter alloc] init];
 }
 
 @end
