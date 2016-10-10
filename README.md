@@ -1,4 +1,4 @@
 # Kogi-Test
-## Installation
+## Installation (Using CocoaPods)
 Run `pod install` and profit!
 
