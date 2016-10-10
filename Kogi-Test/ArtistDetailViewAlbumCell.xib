@@ -9,13 +9,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="czr-Ou-LKP" customClass="ArtistDetailViewAlbumCell">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="82" id="czr-Ou-LKP" customClass="ArtistDetailViewAlbumCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="czr-Ou-LKP" id="gfk-Dm-5YN">
                 <frame key="frameInset" width="375" height="81"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_album.png" translatesAutoresizingMaskIntoConstraints="NO" id="TdP-KU-8aa">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="kNo-ZP-477"/>
+                        </constraints>
+                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="imy-ae-T5m">
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -26,20 +31,24 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_album.png" translatesAutoresizingMaskIntoConstraints="NO" id="TdP-KU-8aa">
-                        <constraints>
-                            <constraint firstAttribute="width" constant="60" id="kNo-ZP-477"/>
-                        </constraints>
-                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibW-RW-9WQ">
+                        <connections>
+                            <action selector="goToAlbumUrlInSpotify:" destination="czr-Ou-LKP" eventType="touchUpInside" id="Ayz-Gb-PMQ"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ibW-RW-9WQ" secondAttribute="trailing" id="6Ue-Ye-la7"/>
                     <constraint firstItem="TdP-KU-8aa" firstAttribute="leading" secondItem="gfk-Dm-5YN" secondAttribute="leadingMargin" id="IMf-od-WyT"/>
                     <constraint firstItem="imy-ae-T5m" firstAttribute="leading" secondItem="TdP-KU-8aa" secondAttribute="trailing" constant="8" id="Imd-w7-fHC"/>
+                    <constraint firstItem="ibW-RW-9WQ" firstAttribute="leading" secondItem="gfk-Dm-5YN" secondAttribute="leading" id="OSZ-1S-ySo"/>
+                    <constraint firstAttribute="bottom" secondItem="ibW-RW-9WQ" secondAttribute="bottom" id="PPL-su-shJ"/>
                     <constraint firstAttribute="bottom" secondItem="TdP-KU-8aa" secondAttribute="bottom" constant="11" id="Po2-94-deH"/>
                     <constraint firstItem="imy-ae-T5m" firstAttribute="trailing" secondItem="ypP-mt-Dqs" secondAttribute="trailing" id="VKW-23-5Jz"/>
                     <constraint firstItem="ypP-mt-Dqs" firstAttribute="top" secondItem="imy-ae-T5m" secondAttribute="bottom" constant="8" symbolic="YES" id="a0x-ce-La7"/>
                     <constraint firstItem="imy-ae-T5m" firstAttribute="leading" secondItem="ypP-mt-Dqs" secondAttribute="leading" id="cHB-C4-iqC"/>
                     <constraint firstItem="imy-ae-T5m" firstAttribute="trailing" secondItem="gfk-Dm-5YN" secondAttribute="trailingMargin" id="eeN-Bi-OtH"/>
+                    <constraint firstItem="ibW-RW-9WQ" firstAttribute="top" secondItem="gfk-Dm-5YN" secondAttribute="topMargin" constant="-3" id="tyR-9J-qPc"/>
                     <constraint firstItem="TdP-KU-8aa" firstAttribute="centerY" secondItem="gfk-Dm-5YN" secondAttribute="centerY" id="vh6-rx-JhS"/>
                     <constraint firstItem="imy-ae-T5m" firstAttribute="top" secondItem="gfk-Dm-5YN" secondAttribute="topMargin" constant="6" id="zmC-0K-qLW"/>
                 </constraints>

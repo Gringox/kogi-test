@@ -13,6 +13,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *imageUrl;
 @property (nonatomic, strong) NSString *markets;
+@property (nonatomic, strong) NSString *spotifyUrl;
 
 + (AlbumModel *)initAlbumFromDictionary:(NSDictionary *)dictionary;
 

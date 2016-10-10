@@ -30,6 +30,11 @@
         album.markets = [markets componentsJoinedByString:@", "];
     }
     
+    NSDictionary *externalUrls = [dictionary dictionaryForKey:@"external_urls"];
+    if (externalUrls) {
+        album.spotifyUrl = [externalUrls stringForKey:@"spotify"];
+    }
+    
     return album.name ? album : nil;
 }
 

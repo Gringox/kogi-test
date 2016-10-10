@@ -10,6 +10,12 @@
 #import "ArtistDetailViewAlbumCell.h"
 #import "AlbumModel.h"
 
+@interface ArtistDetailViewAlbumCell ()
+
+@property (nonatomic, strong) NSString *spotifyUrl;
+
+@end
+
 @implementation ArtistDetailViewAlbumCell
 
 #pragma mark - Constructs
@@ -17,6 +23,8 @@
 - (void)initWithAlbum:(AlbumModel *)album {
     
     self.albumName.text = album.name;
+    
+    self.spotifyUrl = album.spotifyUrl;
     
     if (album.markets) {
         self.availableMarkets.text = album.markets;
@@ -43,6 +51,13 @@
 
 + (CGFloat)formDescriptorCellHeightForRowDescriptor:(XLFormRowDescriptor *)rowDescriptor {
     return 82;
+}
+
+#pragma mark - Actions
+
+- (IBAction)goToAlbumUrlInSpotify:(UIButton *)sender {
+    NSURL *url = [NSURL URLWithString:self.spotifyUrl];
+    [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 }
 
 @end
